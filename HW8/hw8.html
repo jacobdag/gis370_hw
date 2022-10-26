@@ -15,16 +15,16 @@
             Lake Norman, its cooling source. The station has a designated EPZ zone of 10 miles, and a variety of
             disaster preparedness procedures have been developed for the people within it. For example, authorities 
             must be able to quickly distribute pills that block radiation from entering the thyroid to anyone within the 
-            in the event of an emergency. Additionally, depending on the type of plant failure, all schools within the EPZ 
-            must be able to be immediately evacuated, relocating all students and staff to pre-designated areas outside of the EPZ.
-            I was interested in finding which schools are within the EPZ.
+            zone in the event of an emergency. Additionally, all schools within the EPZ must be able to be immediately evacuated,
+            relocating all students and staff to pre-designated areas outside of the EPZ. I was interested in finding which 
+            schools are within this zone.
 
         <p>I originally looked for a polygon or some other data of the station's EPZ, but could not find anything. To answer the question,
-            I created a 10 mile radius buffer around the station point that I had downloaded from the internet. I looked for additional information on
-            the exact origin of the EPZ. So, I then attempted to find a polygon to create a buffer around the plant as a rough estimate, but could not find 
-            anything definitive due to issues in identifying the reactors or perimeter vs other buildings that make up the complex. As a result, I had to 
-            settle on placing the buffer around the point located at what appears to be the center of the complex. After creating the buffer, I created an intersection
-            involving the buffer, and points of public schools within North Carolina. This produced a layer of only the points found within the buffer.
+            I created a 10 mile radius buffer around the station point that I had downloaded from the internet, and isolated through a query. I looked for additional 
+            information on the exact origin of the EPZ, but could not find any. So, I attempted to find a polygon to create a buffer around the plant as a rough estimate, 
+            but could not find anything definitive due to issues in identifying the reactors, and the complex lacked an obvious perimeter that the EPZ would likely originate
+            from. As a result, I had to settle on placing the buffer around the point located at what appears to be the center of the complex. After creating the buffer, I created 
+            an intersection using both the buffer, and points of public schools within North Carolina. This produced a layer of only the schools found within the buffer.
         </p>
     </main>
     <a href=".//epz_with_labels.png">
